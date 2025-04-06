@@ -30,12 +30,7 @@ public class BlockRegistry extends Blocks {
             )
     );
 
-//    //Crops:
-//    public static final RegistryObject<Block> COFFEE = BLOCKS.register("coffee_crop",
-//            () -> new CoffeeBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
-//
-//    public static final RegistryObject<Block> CASSAVA = BLOCKS.register("cassava_crop",
-//            () -> new CassavaBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
 
     public static void register(IEventBus eventBus){
         BLOCKS.register(eventBus);
