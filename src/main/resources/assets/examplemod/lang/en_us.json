@@ -1,5 +1,5 @@
 {
   "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item"
+  "block.create_cobblemon_potion.test_block": "Example Block",
+  "item.create_cobblemon_potion.test_block_item": "Example Item"
 }
