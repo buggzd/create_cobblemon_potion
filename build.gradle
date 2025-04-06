@@ -18,9 +18,24 @@ version = mod_version
 group = mod_group_id
 
 repositories {
+    // REQUIRED for using Kotlin for Forge
+    maven {
+        name = 'Kotlin for Forge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+        content { includeGroup "thedarkcolour" }
+    }
+    maven { url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"}
+    maven { url = "https://maven.impactdev.net/repository/development/"}
+    maven { url = "https://hub.spigotmc.org/nexus/content/groups/public/"}
+
     maven { url = "https://maven.createmod.net" }     // Create主仓库
     maven { url = "https://mvn.devos.one/snapshots" } // Registrate仓库
     maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
+    maven {
+        name = 'NeoForged'
+        url = 'https://maven.neoforged.net/releases'
+    }
+
     mavenLocal()
 }
 
@@ -119,10 +134,22 @@ dependencies {
     implementation(annotationProcessor("com.simibubi.create:create-${minecraft_version}:${create_version}:slim")) {
         transitive = false // 必须关闭传递依赖
     }
+
+
+    // Add Kotlin libs as non-mc libs in ModDevGradle
+
+
+    // create dependencies
     implementation "net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_version}"
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     runtimeOnly "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
     implementation "com.tterrag.registrate:Registrate:${registrate_version}"
+    // cobblemon dependencies
+    implementation "com.cobblemon:neoforge:1.6.1+1.21.1"
+    // kotlinForForge
+    implementation("thedarkcolour:kotlinforforge-neoforge:5.7.0") {
+        exclude group: "net.neoforged.fancymodloader",  module: 'loader'
+    }
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

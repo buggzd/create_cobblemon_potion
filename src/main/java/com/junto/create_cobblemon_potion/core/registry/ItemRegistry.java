@@ -1,7 +1,7 @@
 package com.junto.create_cobblemon_potion.core.registry;
 
 import com.create_cobblemon_potion;
-import com.junto.create_cobblemon_potion.common.item.Item_TestBlock;
+import com.junto.create_cobblemon_potion.common.item.block.Item_TestBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;

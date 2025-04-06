@@ -16,7 +16,7 @@ public class BlockRegistry extends Blocks {
 
     public static final DeferredBlock<Block> TEST_BLOCK = BLOCKS.register(
             "test_block",
-            ()-> new TestBlock( BlockBehaviour.Properties.of().mapColor(MapColor.STONE))
+            ()-> new TestBlock()
     );
 
 //    //Crops:

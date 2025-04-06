@@ -66,6 +66,13 @@ versionRange = "[6.0.4,6.1.0)"  # 版本区间必须包含6.0.4
 ordering = "NONE"
 side = "BOTH"
 
+[[dependencies.create_cobblemon_potion]]  # 替换your_mod_id为你的MODID
+modId = "cobblemon"
+type = "required"
+versionRange = "[1.6.0,)"
+ordering = "NONE"
+side = "BOTH"
+
 [[dependencies.${mod_id}]] #optional
 # the modid of the dependency
 modId="neoforge" #mandatory

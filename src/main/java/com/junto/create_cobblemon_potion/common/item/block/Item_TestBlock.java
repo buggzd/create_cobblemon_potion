@@ -1,7 +1,6 @@
-package com.junto.create_cobblemon_potion.common.item;
+package com.junto.create_cobblemon_potion.common.item.block;
 
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class Item_TestBlock extends BlockItem {
