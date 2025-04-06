@@ -1,5 +1,9 @@
 {
   "itemGroup.create_cobblemon_potion": "Create Cobblemon Potion Mod Tab",
   "block.create_cobblemon_potion.test_block": "Test Block",
-  "item.create_cobblemon_potion.test_block_item": "Test Item"
+  "item.create_cobblemon_potion.test_block_item": "Test Item",
+
+  "fluid_type.create_cobblemon_potion.medicinal_brew_fluidtype": "Medicinal Brew Fluid Type",
+  "fluid.create_cobblemon_potion.medicinal_brew_source": "Medicinal Brew",
+  "item.create_cobblemon_potion.medicinal_brew_bucket": "Bucket of Medicinal Brew"
 }

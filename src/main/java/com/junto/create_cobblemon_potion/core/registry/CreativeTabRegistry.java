@@ -21,10 +21,13 @@ public class CreativeTabRegistry {
             CREATIVE_MODE_TABS.register("create_cobblemon_potion",()->CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.create_cobblemon_potion"))
                     .withTabsBefore(CreativeModeTabs.COMBAT) // Position relative to other tabs
-                    .icon(() -> ItemRegistry.TEST_BLOCK_ITEM.get().getDefaultInstance()) // Icon using an item from ItemRegistry
+                    .icon(() -> ItemRegistry.POTION_BUCKET.get().getDefaultInstance()) // *** 修改图标为药水桶 ***
                     .displayItems((itemDisplayParameters, output) -> {
-                    // add every mod Items into creative tab
-                        output.accept(ItemRegistry.TEST_BLOCK_ITEM.get());
+                        // 将模组物品添加到此标签页
+                        output.accept(ItemRegistry.TEST_BLOCK_ITEM.get()); // 保留测试方块物品
+
+                        // --- 在这里添加药水桶 ---
+                        output.accept(ItemRegistry.POTION_BUCKET.get());
 
                     }).build());
 

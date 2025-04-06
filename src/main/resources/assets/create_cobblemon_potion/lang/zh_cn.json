@@ -1,5 +1,9 @@
 {
   "itemGroup.create_cobblemon_potion": "宝可梦动力药水",
   "block.create_cobblemon_potion.test_block": "测试方块",
-  "item.create_cobblemon_potion.test_block_item": "测试方块"
+  "item.create_cobblemon_potion.test_block_item": "测试方块",
+
+  "fluid_type.create_cobblemon_potion.medicinal_brew_fluidtype": "药酿液体",
+  "fluid.create_cobblemon_potion.medicinal_brew_source": "药酿",
+  "item.create_cobblemon_potion.medicinal_brew_bucket": "一桶药酿"
 }

@@ -1,9 +1,7 @@
 package com;
 
 import com.junto.create_cobblemon_potion.config.Config;
-import com.junto.create_cobblemon_potion.core.registry.BlockRegistry;
-import com.junto.create_cobblemon_potion.core.registry.CreativeTabRegistry;
-import com.junto.create_cobblemon_potion.core.registry.ItemRegistry;
+import com.junto.create_cobblemon_potion.core.registry.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -54,6 +52,10 @@ public class create_cobblemon_potion
         // Register the Deferred Register to the mod event bus so items get registered
         // ITEMS.register(modEventBus);
         ItemRegistry.register(modEventBus);
+        // Fluid
+        FluidTypeRegistry.register(modEventBus);
+        FluidRegistry.register(modEventBus);
+
         // Register the Deferred Register to the mod event bus so tabs get registered
         //CREATIVE_MODE_TABS.register(modEventBus);
         CreativeTabRegistry.register(modEventBus);
