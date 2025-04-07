@@ -59,6 +59,26 @@ public class BlockRegistry extends Blocks {
                     BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
             )
     );
+    // medical 全满药
+    public static final DeferredHolder<Block, LiquidBlock> MAX_POTION_BLOCK = BLOCKS.register(
+            "max_potion_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.MAX_POTION_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical 全复药
+    public static final DeferredHolder<Block, LiquidBlock> FULL_RESTORE_BLOCK = BLOCKS.register(
+            "full_restore_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.FULL_RESTORE_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
 
 
     public static void register(IEventBus eventBus){

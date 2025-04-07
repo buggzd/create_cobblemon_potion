@@ -72,7 +72,30 @@ public class ItemRegistry {
                             .stacksTo(1)
             )
     );
-
+    // medical max potion
+    public static final DeferredHolder<Item, BucketItem> MAX_POTION_BUCKET = ITEMS.register(
+            "max_potion_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.MAX_POTION_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical full restore
+    public static final DeferredHolder<Item, BucketItem> FULL_RESTORE_BUCKET = ITEMS.register(
+            "full_restore_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.FULL_RESTORE_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

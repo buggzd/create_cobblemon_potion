@@ -15,8 +15,16 @@
   "fluid.create_cobblemon_potion.super_potion_source": "好伤药",
   "item.create_cobblemon_potion.super_potion_bucket": "一桶好伤药",
 
-
   "fluid_type.create_cobblemon_potion.hyper_potion_fluidtype": "厉害伤药液体",
   "fluid.create_cobblemon_potion.hyper_potion_source": "厉害伤药",
-  "item.create_cobblemon_potion.hyper_potion_bucket": "一桶厉害伤药"
+  "item.create_cobblemon_potion.hyper_potion_bucket": "一桶厉害伤药",
+
+
+  "fluid_type.create_cobblemon_potion.max_potion_fluidtype": "全满药液体",
+  "fluid.create_cobblemon_potion.max_potion_source": "全满药",
+  "item.create_cobblemon_potion.max_potion_bucket": "一桶全满药",
+
+  "fluid_type.create_cobblemon_potion.full_restore_fluidtype": "全复药液体",
+  "fluid.create_cobblemon_potion.full_restore_source": "全复药",
+  "item.create_cobblemon_potion.full_restore_bucket": "一桶全复药"
 }

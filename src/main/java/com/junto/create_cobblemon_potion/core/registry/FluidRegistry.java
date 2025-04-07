@@ -106,6 +106,43 @@ public class FluidRegistry {
     )
             .bucket(ItemRegistry.HYPER_POTION_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
             .block(BlockRegistry.HYPER_POTION_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    //medical max potion 全满药
+    public static final DeferredHolder<Fluid, FlowingFluid> MAX_POTION_SOURCE = FLUIDS.register(
+            "max_potion_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.MAX_POTION_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> MAX_POTION_FLOWING = FLUIDS.register(
+            "max_potion_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.MAX_POTION_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties MAX_POTION_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.MAX_POTION_FLUID_TYPE, // 关联 FluidType
+            MAX_POTION_SOURCE,                       // 关联源流体
+            MAX_POTION_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.MAX_POTION_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.MAX_POTION_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+
+    //medical full restore
+    public static final DeferredHolder<Fluid, FlowingFluid> FULL_RESTORE_SOURCE = FLUIDS.register(
+            "full_restore_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.FULL_RESTORE_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> FULL_RESTORE_FLOWING = FLUIDS.register(
+            "full_restore_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.FULL_RESTORE_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties FULL_RESTORE_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.FULL_RESTORE_FLUID_TYPE, // 关联 FluidType
+            FULL_RESTORE_SOURCE,                       // 关联源流体
+            FULL_RESTORE_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.FULL_RESTORE_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.FULL_RESTORE_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
 
     // 注册到事件总线的方法
     public static void register(IEventBus modEventBus) {

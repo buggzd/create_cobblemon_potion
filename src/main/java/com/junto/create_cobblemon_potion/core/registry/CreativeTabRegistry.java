@@ -27,6 +27,8 @@ public class CreativeTabRegistry {
                         output.accept(ItemRegistry.POTION_BUCKET.get());
                         output.accept(ItemRegistry.SUPER_POTION_BUCKET.get());
                         output.accept(ItemRegistry.HYPER_POTION_BUCKET.get());
+                        output.accept(ItemRegistry.MAX_POTION_BUCKET.get());
+                        output.accept(ItemRegistry.FULL_RESTORE_BUCKET.get());
                     }).build());
 
 

@@ -17,5 +17,13 @@
 
   "fluid_type.create_cobblemon_potion.hyper_potion_fluidtype": "hyper potion Fluid Type",
   "fluid.create_cobblemon_potion.hyper_potion_source": "hyper potion",
-  "item.create_cobblemon_potion.hyper_potion_bucket": "Bucket of hyper potion"
+  "item.create_cobblemon_potion.hyper_potion_bucket": "Bucket of hyper potion",
+
+  "fluid_type.create_cobblemon_potion.max_potion_fluidtype": "max potion Fluid Type",
+  "fluid.create_cobblemon_potion.max_potion_source": "max potion",
+  "item.create_cobblemon_potion.max_potion_bucket": "Bucket of max potion",
+
+  "fluid_type.create_cobblemon_potion.full_restore_fluidtype": "full restore Fluid Type",
+  "fluid.create_cobblemon_potion.full_restore_source": "full restore",
+  "item.create_cobblemon_potion.full_restore_bucket": "Bucket of full restore"
 }

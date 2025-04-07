@@ -35,6 +35,8 @@ public class ClientSetup {
         registerFluidTypeExtension(event, FluidTypeRegistry.POTION_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.SUPER_POTION_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.HYPER_POTION_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.MAX_POTION_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.FULL_RESTORE_FLUID_TYPE.get());
         // ... other types ...
     }
 
@@ -96,6 +98,13 @@ public class ClientSetup {
 
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.HYPER_POTION_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.HYPER_POTION_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_POTION_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_POTION_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.FULL_RESTORE_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.FULL_RESTORE_FLOWING.get(), RenderType.translucent());
             // ... other types ...
         });
     }

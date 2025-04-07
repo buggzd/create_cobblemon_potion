@@ -64,6 +64,26 @@ public class FluidTypeRegistry {
             0xFF_dc6caa, // 粉红色
             new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
     );
+    //medical MAX_POTION
+    public static final DeferredHolder<FluidType, BaseFluidType>  MAX_POTION_FLUID_TYPE = register(
+            "max_potion_fluidtype",
+            FluidType.Properties.create().density(1000).viscosity(1000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                    .descriptionId("fluid_type.create_cobblemon_potion.max_potion_fluidtype"),
+            0xFF_839cea, // 粉蓝色
+            new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
+    );
+    //medical full_restore
+    public static final DeferredHolder<FluidType, BaseFluidType>  FULL_RESTORE_FLUID_TYPE = register(
+            "full_restore_fluidtype",
+            FluidType.Properties.create().density(1000).viscosity(1000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                    .descriptionId("fluid_type.create_cobblemon_potion.full_restore_fluidtype"),
+            0xFF_9bd57e, // 绿色
+            new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
+    );
     // --- 私有 register 辅助方法  ---
     // 返回类型现在是 DeferredHolder<FluidType, BaseFluidType>
     private static @NotNull DeferredHolder<FluidType, BaseFluidType> register(String name, FluidType.Properties properties, int tintColor, Vector3f fogColor) {
