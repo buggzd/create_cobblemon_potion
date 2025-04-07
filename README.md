@@ -61,13 +61,13 @@ If you encounter any bugs or have suggestions, please report them on the [GitHub
 *   **Minecraft:** [1.21.1]
 *   **NeoForge:** [21.1.129]
 *   **Create:** [6.0.4]
-*   **Cobblemon:** [需求版本, 例如 1.5+]
+*   **Cobblemon:** [1.6.1]
 *   **(可选但推荐)** JEI/EMI/REI 用于查看配方。
 
 ### 特性
 1.  **动力酿造:** 使用 Create 的 **动力搅拌器 (Mechanical Mixer)** 和 **工作盆 (Basin)** 来酿造 Cobblemon 的药酿。请在 JEI/REI/EMI 中查看具体配方！
 2.  **流体存储:** 将酿造好的 Cobblemon 药水（现在是流体形式！）存储在 Create 的 **流体储罐 (Fluid Tank)** 中。高效管理你的药水储备。
-3.  **自动装瓶:** 使用 Create 的 **注液口 (Spout)** 将你的自定义药水流体注入**玻璃瓶 (Glass Bottle)**，将得到可用的 Cobblemon 药水物品。
+3.  **自动装瓶:** 使用 Create 的 **注液器 (Spout)** 将你的自定义药水流体注入**玻璃瓶 (Glass Bottle)**，将得到可用的 Cobblemon 药水物品。
 
 ### 使用方法
 1.  在 JEI/REI/EMI 中查看新增的**搅拌 (Mixing)** 配方，这些配方使用药水原料生产药水流体。
