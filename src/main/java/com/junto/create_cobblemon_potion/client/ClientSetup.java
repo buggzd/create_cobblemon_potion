@@ -31,7 +31,10 @@ public class ClientSetup {
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) { // Use the correct event type
+        registerFluidTypeExtension(event, FluidTypeRegistry.MEDICINAL_BREW_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.POTION_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.SUPER_POTION_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.HYPER_POTION_FLUID_TYPE.get());
         // ... other types ...
     }
 
@@ -83,7 +86,16 @@ public class ClientSetup {
     public static void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MEDICINAL_BREW_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MEDICINAL_BREW_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.POTION_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.POTION_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.SUPER_POTION_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.SUPER_POTION_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.HYPER_POTION_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.HYPER_POTION_FLOWING.get(), RenderType.translucent());
             // ... other types ...
         });
     }

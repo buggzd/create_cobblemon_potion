@@ -5,5 +5,17 @@
 
   "fluid_type.create_cobblemon_potion.medicinal_brew_fluidtype": "Medicinal Brew Fluid Type",
   "fluid.create_cobblemon_potion.medicinal_brew_source": "Medicinal Brew",
-  "item.create_cobblemon_potion.medicinal_brew_bucket": "Bucket of Medicinal Brew"
+  "item.create_cobblemon_potion.medicinal_brew_bucket": "Bucket of Medicinal Brew",
+
+  "fluid_type.create_cobblemon_potion.potion_fluidtype": "potion Fluid Type",
+  "fluid.create_cobblemon_potion.potion_source": "potion",
+  "item.create_cobblemon_potion.potion_bucket": "Bucket of potion",
+
+  "fluid_type.create_cobblemon_potion.super_potion_fluidtype": "super potion Fluid Type",
+  "fluid.create_cobblemon_potion.super_potion_source": "super potion",
+  "item.create_cobblemon_potion.super_potion_bucket": "Bucket of super potion",
+
+  "fluid_type.create_cobblemon_potion.hyper_potion_fluidtype": "hyper potion Fluid Type",
+  "fluid.create_cobblemon_potion.hyper_potion_source": "hyper potion",
+  "item.create_cobblemon_potion.hyper_potion_bucket": "Bucket of hyper potion"
 }

@@ -25,13 +25,43 @@ public class FluidTypeRegistry {
 
     // 使用 DeferredHolder<FluidType, BaseFluidType>
     // 第一个参数是注册表类型 (FluidType)，第二个是你 Supplier 返回的具体类型 (BaseFluidType)
-    public static final DeferredHolder<FluidType, BaseFluidType> POTION_FLUID_TYPE = register(
+    public static final DeferredHolder<FluidType, BaseFluidType> MEDICINAL_BREW_FLUID_TYPE = register(
             "medicinal_brew_fluidtype",
             FluidType.Properties.create().density(1000).viscosity(1000)
                     .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                     .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
                     .descriptionId("fluid_type.create_cobblemon_potion.medicinal_brew_fluidtype"),
             0xFF_2DBAA0, // 淡蓝色
+            new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
+    );
+    // POTION
+    public static final DeferredHolder<FluidType, BaseFluidType> POTION_FLUID_TYPE = register(
+            "potion_fluidtype",
+            FluidType.Properties.create().density(1000).viscosity(1000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                    .descriptionId("fluid_type.create_cobblemon_potion.potion_fluidtype"),
+            0xFF_6e4f9c, // 紫色
+            new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
+    );
+    //medical SUPER_POTION
+    public static final DeferredHolder<FluidType, BaseFluidType> SUPER_POTION_FLUID_TYPE = register(
+            "super_potion_fluidtype",
+            FluidType.Properties.create().density(1000).viscosity(1000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                    .descriptionId("fluid_type.create_cobblemon_potion.super_potion_fluidtype"),
+            0xFF_b95952, // 橘红色
+            new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
+    );
+    //medical HYPER_POTION
+    public static final DeferredHolder<FluidType, BaseFluidType>  HYPER_POTION_FLUID_TYPE = register(
+            "hyper_potion_fluidtype",
+            FluidType.Properties.create().density(1000).viscosity(1000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                    .descriptionId("fluid_type.create_cobblemon_potion.hyper_potion_fluidtype"),
+            0xFF_dc6caa, // 粉红色
             new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
     );
     // --- 私有 register 辅助方法  ---

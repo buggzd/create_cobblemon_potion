@@ -5,5 +5,18 @@
 
   "fluid_type.create_cobblemon_potion.medicinal_brew_fluidtype": "药酿液体",
   "fluid.create_cobblemon_potion.medicinal_brew_source": "药酿",
-  "item.create_cobblemon_potion.medicinal_brew_bucket": "一桶药酿"
+  "item.create_cobblemon_potion.medicinal_brew_bucket": "一桶药酿",
+
+  "fluid_type.create_cobblemon_potion.potion_fluidtype": "伤药液体",
+  "fluid.create_cobblemon_potion.potion_source": "伤药",
+  "item.create_cobblemon_potion.potion_bucket": "一桶伤药",
+
+  "fluid_type.create_cobblemon_potion.super_potion_fluidtype": "好伤药液体",
+  "fluid.create_cobblemon_potion.super_potion_source": "好伤药",
+  "item.create_cobblemon_potion.super_potion_bucket": "一桶好伤药",
+
+
+  "fluid_type.create_cobblemon_potion.hyper_potion_fluidtype": "厉害伤药液体",
+  "fluid.create_cobblemon_potion.hyper_potion_source": "厉害伤药",
+  "item.create_cobblemon_potion.hyper_potion_bucket": "一桶厉害伤药"
 }

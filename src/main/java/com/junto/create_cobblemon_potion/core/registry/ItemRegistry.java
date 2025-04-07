@@ -23,12 +23,50 @@ public class ItemRegistry {
             );
 
     // 注册药水桶
-    public static final DeferredHolder<Item, BucketItem> POTION_BUCKET = ITEMS.register(
+    public static final DeferredHolder<Item, BucketItem> MEDICINAL_BREW_BUCKET = ITEMS.register(
             "medicinal_brew_bucket",
             () -> new BucketItem(
                     // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
                     // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
                     FluidRegistry.MEDICINAL_BREW_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical potion
+    public static final DeferredHolder<Item, BucketItem> POTION_BUCKET = ITEMS.register(
+            "potion_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.POTION_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+
+    // medical super potion
+    public static final DeferredHolder<Item, BucketItem> SUPER_POTION_BUCKET = ITEMS.register(
+            "super_potion_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.SUPER_POTION_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+
+    // medical hyper potion
+    public static final DeferredHolder<Item, BucketItem> HYPER_POTION_BUCKET = ITEMS.register(
+            "hyper_potion_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.HYPER_POTION_SOURCE.get(),
                     new Item.Properties()
                             .craftRemainder(Items.BUCKET)
                             .stacksTo(1)
