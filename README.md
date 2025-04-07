@@ -2,7 +2,7 @@
 
 [![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.1-brightgreen.svg)](https://www.minecraft.net)
 [![Modloader](https://img.shields.io/badge/Modloader-NeoForge-blue.svg)](https://neoforged.net/)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://choosealicense.com/licenses/mit/)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/buggzd/create_cobblemon_potion/blob/master/license.txt)
 
 
 ![Logo](./logo.png) 
