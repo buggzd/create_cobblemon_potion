@@ -73,7 +73,7 @@ If you encounter any bugs or have suggestions, please report them on the [GitHub
 1.  在 JEI/REI/EMI 中查看新增的**搅拌 (Mixing)** 配方，这些配方使用药水原料生产药水流体。
 2.  设置一个 Create **工作盆 (Basin)**，上方放置**动力搅拌器 (Mechanical Mixer)**，下方放置**烈焰人燃烧室 (Blaze Burner)**（加热状态）。投入所需的基础流体（例如水）和物品即可开始酿造。
 3.  将产出的药水流体用泵抽入**流体储罐 (Fluid Tank)** 进行存储。
-4.  使用连接到流体储罐的**注液器 (Spout)**，将流体注入放在**工作台面 (Depot)** 或**传送带 (Belt)** 上的**玻璃瓶 (Glass Bottle)**，即可获得最终的 Cobblemon 药水物品。
+4.  使用连接到流体储罐的**注液器 (Spout)**，将流体注入放在**置物台 (Depot)** 或**传送带 (Belt)** 上的**玻璃瓶 (Glass Bottle)**，即可获得最终的 Cobblemon 药水物品。
 
 ### 安装
 1.  确保你已经安装了兼容版本的 **Minecraft**, **NeoForge**, **Create** 和 **Cobblemon**。
