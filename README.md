@@ -2,7 +2,7 @@
 
 [![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.1-brightgreen.svg)](https://www.minecraft.net)
 [![Modloader](https://img.shields.io/badge/Modloader-NeoForge-blue.svg)](https://neoforged.net/)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/buggzd/create_cobblemon_potion/blob/master/license.txt)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/buggzd/create_cobblemon_potion/blob/master/LICENSE)
 
 
 ![Logo](./logo.png) 
@@ -88,3 +88,9 @@ If you encounter any bugs or have suggestions, please report them on the [GitHub
 
 ### 问题与反馈
 如果你遇到任何 Bug 或有功能建议，请在 [GitHub Issues 页面](https://github.com/buggzd/create_cobblemon_potion/issues) 提交反馈！
+
+### Dependencies
+*   ...
+*   **Create:** ([Required Version]) - Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+*   **Cobblemon:** ([Required Version]) - Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+*   ...
