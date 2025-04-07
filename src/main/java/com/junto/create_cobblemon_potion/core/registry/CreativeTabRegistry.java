@@ -29,6 +29,11 @@ public class CreativeTabRegistry {
                         output.accept(ItemRegistry.HYPER_POTION_BUCKET.get());
                         output.accept(ItemRegistry.MAX_POTION_BUCKET.get());
                         output.accept(ItemRegistry.FULL_RESTORE_BUCKET.get());
+                        output.accept(ItemRegistry.ETHER_BUCKET.get());
+                        output.accept(ItemRegistry.MAX_ETHER_BUCKET.get());
+                        output.accept(ItemRegistry.ELIXIR_BUCKET.get());
+                        output.accept(ItemRegistry.MAX_ELIXIR_BUCKET.get());
+
                     }).build());
 
 

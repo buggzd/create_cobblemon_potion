@@ -79,6 +79,46 @@ public class BlockRegistry extends Blocks {
                     BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
             )
     );
+    // medical PP单项小补剂
+    public static final DeferredHolder<Block, LiquidBlock> ETHER_BLOCK = BLOCKS.register(
+            "ether_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.ETHER_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical PP单项全补剂
+    public static final DeferredHolder<Block, LiquidBlock> MAX_ETHER_BLOCK = BLOCKS.register(
+            "max_ether_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.MAX_ETHER_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical PP多项小补剂
+    public static final DeferredHolder<Block, LiquidBlock> ELIXIR_BLOCK = BLOCKS.register(
+            "elixir_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.ELIXIR_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical PP多项全补剂
+    public static final DeferredHolder<Block, LiquidBlock> MAX_ELIXIR_BLOCK = BLOCKS.register(
+            "max_elixir_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.MAX_ELIXIR_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
 
 
     public static void register(IEventBus eventBus){

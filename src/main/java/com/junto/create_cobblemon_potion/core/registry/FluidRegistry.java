@@ -143,7 +143,79 @@ public class FluidRegistry {
     )
             .bucket(ItemRegistry.FULL_RESTORE_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
             .block(BlockRegistry.FULL_RESTORE_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical ether
+    public static final DeferredHolder<Fluid, FlowingFluid> ETHER_SOURCE = FLUIDS.register(
+            "ether_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.ETHER_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
 
+    public static final DeferredHolder<Fluid, FlowingFluid> ETHER_FLOWING = FLUIDS.register(
+            "ether_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.ETHER_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties ETHER_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.ETHER_FLUID_TYPE, // 关联 FluidType
+            ETHER_SOURCE,                       // 关联源流体
+            ETHER_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.ETHER_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.ETHER_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical max ether
+    public static final DeferredHolder<Fluid, FlowingFluid> MAX_ETHER_SOURCE = FLUIDS.register(
+            "max_ether_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.MAX_ETHER_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> MAX_ETHER_FLOWING = FLUIDS.register(
+            "max_ether_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.MAX_ETHER_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties MAX_ETHER_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.MAX_ETHER_FLUID_TYPE, // 关联 FluidType
+            MAX_ETHER_SOURCE,                       // 关联源流体
+            MAX_ETHER_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.MAX_ETHER_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.MAX_ETHER_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+
+    // medical elixir
+    public static final DeferredHolder<Fluid, FlowingFluid> ELIXIR_SOURCE = FLUIDS.register(
+            "elixir_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.ELIXIR_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> ELIXIR_FLOWING = FLUIDS.register(
+            "elixir_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.ELIXIR_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties ELIXIR_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.ELIXIR_FLUID_TYPE, // 关联 FluidType
+            ELIXIR_SOURCE,                       // 关联源流体
+            ELIXIR_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.ELIXIR_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.ELIXIR_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical max elixir
+    public static final DeferredHolder<Fluid, FlowingFluid> MAX_ELIXIR_SOURCE = FLUIDS.register(
+            "max_elixir_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.MAX_ELIXIR_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> MAX_ELIXIR_FLOWING = FLUIDS.register(
+            "max_elixir_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.MAX_ELIXIR_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties MAX_ELIXIR_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.MAX_ELIXIR_FLUID_TYPE, // 关联 FluidType
+            MAX_ELIXIR_SOURCE,                       // 关联源流体
+            MAX_ELIXIR_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.MAX_ELIXIR_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.MAX_ELIXIR_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
     // 注册到事件总线的方法
     public static void register(IEventBus modEventBus) {
         FLUIDS.register(modEventBus);

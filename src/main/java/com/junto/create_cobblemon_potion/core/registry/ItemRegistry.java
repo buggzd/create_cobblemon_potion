@@ -96,6 +96,54 @@ public class ItemRegistry {
                             .stacksTo(1)
             )
     );
+    // medical ether
+    public static final DeferredHolder<Item, BucketItem> ETHER_BUCKET = ITEMS.register(
+            "ether_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.ETHER_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical max ether
+    public static final DeferredHolder<Item, BucketItem> MAX_ETHER_BUCKET = ITEMS.register(
+            "max_ether_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.MAX_ETHER_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical elixir
+    public static final DeferredHolder<Item, BucketItem> ELIXIR_BUCKET = ITEMS.register(
+            "elixir_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.ELIXIR_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical max elixir
+    public static final DeferredHolder<Item, BucketItem> MAX_ELIXIR_BUCKET = ITEMS.register(
+            "max_elixir_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.MAX_ELIXIR_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -26,5 +26,21 @@
 
   "fluid_type.create_cobblemon_potion.full_restore_fluidtype": "全复药液体",
   "fluid.create_cobblemon_potion.full_restore_source": "全复药",
-  "item.create_cobblemon_potion.full_restore_bucket": "一桶全复药"
+  "item.create_cobblemon_potion.full_restore_bucket": "一桶全复药",
+
+  "fluid_type.create_cobblemon_potion.ether_fluidtype": "PP单项小补剂液体",
+  "fluid.create_cobblemon_potion.ether_source": "PP单项小补剂",
+  "item.create_cobblemon_potion.ether_bucket": "一桶PP单项小补剂",
+
+  "fluid_type.create_cobblemon_potion.max_ether_fluidtype": "PP单项全补剂液体",
+  "fluid.create_cobblemon_potion.max_ether_source": "PP单项全补剂",
+  "item.create_cobblemon_potion.max_ether_bucket": "一桶PP单项全补剂",
+
+  "fluid_type.create_cobblemon_potion.elixir_fluidtype": "PP多项小补剂液体",
+  "fluid.create_cobblemon_potion.elixir_source": "PP多项小补剂",
+  "item.create_cobblemon_potion.elixir_bucket": "一桶PP多项小补剂",
+
+  "fluid_type.create_cobblemon_potion.max_elixir_fluidtype": "PP多项全补剂液体",
+  "fluid.create_cobblemon_potion.max_elixir_source": "PP多项全补剂",
+  "item.create_cobblemon_potion.max_elixir_bucket": "一桶PP多项全补剂"
 }

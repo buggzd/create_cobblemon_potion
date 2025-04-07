@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "cobblemon:pep_up_flower"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "create_cobblemon_potion:elixir_source"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "create_cobblemon_potion:max_elixir_source"
+    }
+  ]
+}

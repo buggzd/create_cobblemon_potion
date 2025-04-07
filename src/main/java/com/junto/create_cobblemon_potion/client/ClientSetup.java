@@ -37,6 +37,11 @@ public class ClientSetup {
         registerFluidTypeExtension(event, FluidTypeRegistry.HYPER_POTION_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.MAX_POTION_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.FULL_RESTORE_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.ETHER_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.MAX_ETHER_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.ELIXIR_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.MAX_ELIXIR_FLUID_TYPE.get());
+
         // ... other types ...
     }
 
@@ -105,6 +110,21 @@ public class ClientSetup {
 
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.FULL_RESTORE_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.FULL_RESTORE_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ETHER_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ETHER_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_ETHER_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_ETHER_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ELIXIR_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ELIXIR_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_ELIXIR_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_ELIXIR_FLOWING.get(), RenderType.translucent());
             // ... other types ...
         });
     }

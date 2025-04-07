@@ -25,5 +25,23 @@
 
   "fluid_type.create_cobblemon_potion.full_restore_fluidtype": "full restore Fluid Type",
   "fluid.create_cobblemon_potion.full_restore_source": "full restore",
-  "item.create_cobblemon_potion.full_restore_bucket": "Bucket of full restore"
+  "item.create_cobblemon_potion.full_restore_bucket": "Bucket of full restore",
+
+  "fluid_type.create_cobblemon_potion.ether_fluidtype": "ether Fluid Type",
+  "fluid.create_cobblemon_potion.ether_source": "ether",
+  "item.create_cobblemon_potion.ether_bucket": "Bucket of ether",
+
+  "fluid_type.create_cobblemon_potion.max_ether_fluidtype": "max ether Fluid Type",
+  "fluid.create_cobblemon_potion.max_ether_source": "max ether",
+  "item.create_cobblemon_potion.max_ether_bucket": "Bucket of max ether",
+
+
+  "fluid_type.create_cobblemon_potion.elixir_fluidtype": "elixir Fluid Type",
+  "fluid.create_cobblemon_potion.elixir_source": "elixir",
+  "item.create_cobblemon_potion.elixir_bucket": "Bucket of elixir",
+
+
+  "fluid_type.create_cobblemon_potion.max_elixir_fluidtype": "max elixir Fluid Type",
+  "fluid.create_cobblemon_potion.max_elixir_source": "max elixir",
+  "item.create_cobblemon_potion.max_elixir_bucket": "Bucket of max elixir"
 }
