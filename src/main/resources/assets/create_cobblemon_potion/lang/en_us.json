@@ -47,5 +47,9 @@
 
   "fluid_type.create_cobblemon_potion.antidote_fluidtype": "antidote Fluid Type",
   "fluid.create_cobblemon_potion.antidote_source": "antidote",
-  "item.create_cobblemon_potion.antidote_bucket": "Bucket of antidote"
+  "item.create_cobblemon_potion.antidote_bucket": "Bucket of antidote",
+
+  "fluid_type.create_cobblemon_potion.awakening_fluidtype": "awakening Fluid Type",
+  "fluid.create_cobblemon_potion.awakening_source": "awakening",
+  "item.create_cobblemon_potion.awakening_bucket": "Bucket of awakening"
 }

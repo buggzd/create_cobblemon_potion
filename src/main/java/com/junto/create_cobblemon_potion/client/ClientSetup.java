@@ -42,6 +42,7 @@ public class ClientSetup {
         registerFluidTypeExtension(event, FluidTypeRegistry.ELIXIR_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.MAX_ELIXIR_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.ANTIDOTE_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.AWAKENING_FLUID_TYPE.get());
 
         // ... other types ...
     }
@@ -127,9 +128,12 @@ public class ClientSetup {
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_ELIXIR_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.MAX_ELIXIR_FLOWING.get(), RenderType.translucent());
 
-
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ANTIDOTE_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ANTIDOTE_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.AWAKENING_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.AWAKENING_FLOWING.get(), RenderType.translucent());
+
             // ... other types ...
         });
     }

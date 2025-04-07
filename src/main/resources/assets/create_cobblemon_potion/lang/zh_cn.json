@@ -46,5 +46,10 @@
 
   "fluid_type.create_cobblemon_potion.antidote_fluidtype": "解毒药液体",
   "fluid.create_cobblemon_potion.antidote_source": "解毒药",
-  "item.create_cobblemon_potion.antidote_bucket": "一桶解毒药"
+  "item.create_cobblemon_potion.antidote_bucket": "一桶解毒药",
+
+
+  "fluid_type.create_cobblemon_potion.awakening_fluidtype": "解眠药液体",
+  "fluid.create_cobblemon_potion.awakening_source": "解眠药",
+  "item.create_cobblemon_potion.awakening_bucket": "一桶解眠药"
 }

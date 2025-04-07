@@ -35,7 +35,9 @@ public class CreativeTabRegistry {
                         output.accept(ItemRegistry.MAX_ETHER_BUCKET.get());
                         output.accept(ItemRegistry.ELIXIR_BUCKET.get());
                         output.accept(ItemRegistry.MAX_ELIXIR_BUCKET.get());
+                        // debuff
                         output.accept(ItemRegistry.ANTIDOTE_BUCKET.get());
+                        output.accept(ItemRegistry.AWAKENING_BUCKET.get());
 
 
                     }).build());

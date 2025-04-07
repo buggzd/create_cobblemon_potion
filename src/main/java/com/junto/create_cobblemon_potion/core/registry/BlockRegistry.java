@@ -119,7 +119,7 @@ public class BlockRegistry extends Blocks {
                     BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
             )
     );
-    // medical 解毒剂
+    // medical 解毒药
     public static final DeferredHolder<Block, LiquidBlock> ANTIDOTE_BLOCK = BLOCKS.register(
             "antidote_block", // 方块的注册名
             () -> new LiquidBlock(
@@ -129,6 +129,18 @@ public class BlockRegistry extends Blocks {
                     BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
             )
     );
+
+    // medical 解眠药
+    public static final DeferredHolder<Block, LiquidBlock> AWAKENING_BLOCK = BLOCKS.register(
+            "awakening_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.AWAKENING_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+
 
 
     public static void register(IEventBus eventBus){
