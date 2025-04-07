@@ -124,6 +124,16 @@ public class FluidTypeRegistry {
             0xFF_95eee1, // 绿色
             new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
     );
+    //medical antidote
+    public static final DeferredHolder<FluidType, BaseFluidType>  ANTIDOTE_FLUID_TYPE = register(
+            "antidote_fluidtype",
+            FluidType.Properties.create().density(1000).viscosity(1000)
+                    .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                    .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                    .descriptionId("fluid_type.create_cobblemon_potion.antidote_fluidtype"),
+            0xFF_fcf78b, // 金黄色
+            new Vector3f(248f / 255f, 92f / 255f, 92f / 255f)
+    );
     // --- 私有 register 辅助方法  ---
     // 返回类型现在是 DeferredHolder<FluidType, BaseFluidType>
     private static @NotNull DeferredHolder<FluidType, BaseFluidType> register(String name, FluidType.Properties properties, int tintColor, Vector3f fogColor) {

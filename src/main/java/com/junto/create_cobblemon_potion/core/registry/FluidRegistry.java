@@ -216,6 +216,24 @@ public class FluidRegistry {
     )
             .bucket(ItemRegistry.MAX_ELIXIR_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
             .block(BlockRegistry.MAX_ELIXIR_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical antidote
+    public static final DeferredHolder<Fluid, FlowingFluid> ANTIDOTE_SOURCE = FLUIDS.register(
+            "antidote_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.ANTIDOTE_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> ANTIDOTE_FLOWING = FLUIDS.register(
+            "antidote_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.ANTIDOTE_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties ANTIDOTE_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.ANTIDOTE_FLUID_TYPE, // 关联 FluidType
+            ANTIDOTE_SOURCE,                       // 关联源流体
+            ANTIDOTE_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.ANTIDOTE_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.ANTIDOTE_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
     // 注册到事件总线的方法
     public static void register(IEventBus modEventBus) {
         FLUIDS.register(modEventBus);

@@ -43,5 +43,9 @@
 
   "fluid_type.create_cobblemon_potion.max_elixir_fluidtype": "max elixir Fluid Type",
   "fluid.create_cobblemon_potion.max_elixir_source": "max elixir",
-  "item.create_cobblemon_potion.max_elixir_bucket": "Bucket of max elixir"
+  "item.create_cobblemon_potion.max_elixir_bucket": "Bucket of max elixir",
+
+  "fluid_type.create_cobblemon_potion.antidote_fluidtype": "antidote Fluid Type",
+  "fluid.create_cobblemon_potion.antidote_source": "antidote",
+  "item.create_cobblemon_potion.antidote_bucket": "Bucket of antidote"
 }

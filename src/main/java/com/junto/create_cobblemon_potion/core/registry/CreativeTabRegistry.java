@@ -23,16 +23,20 @@ public class CreativeTabRegistry {
                         output.accept(ItemRegistry.TEST_BLOCK_ITEM.get()); // 保留测试方块物品
 
                         // --- 在这里添加药水桶 ---
+                        // healthy
                         output.accept(ItemRegistry.MEDICINAL_BREW_BUCKET.get());
                         output.accept(ItemRegistry.POTION_BUCKET.get());
                         output.accept(ItemRegistry.SUPER_POTION_BUCKET.get());
                         output.accept(ItemRegistry.HYPER_POTION_BUCKET.get());
                         output.accept(ItemRegistry.MAX_POTION_BUCKET.get());
                         output.accept(ItemRegistry.FULL_RESTORE_BUCKET.get());
+                        // pp
                         output.accept(ItemRegistry.ETHER_BUCKET.get());
                         output.accept(ItemRegistry.MAX_ETHER_BUCKET.get());
                         output.accept(ItemRegistry.ELIXIR_BUCKET.get());
                         output.accept(ItemRegistry.MAX_ELIXIR_BUCKET.get());
+                        output.accept(ItemRegistry.ANTIDOTE_BUCKET.get());
+
 
                     }).build());
 

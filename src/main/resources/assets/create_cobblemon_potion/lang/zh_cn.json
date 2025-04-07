@@ -42,5 +42,9 @@
 
   "fluid_type.create_cobblemon_potion.max_elixir_fluidtype": "PP多项全补剂液体",
   "fluid.create_cobblemon_potion.max_elixir_source": "PP多项全补剂",
-  "item.create_cobblemon_potion.max_elixir_bucket": "一桶PP多项全补剂"
+  "item.create_cobblemon_potion.max_elixir_bucket": "一桶PP多项全补剂",
+
+  "fluid_type.create_cobblemon_potion.antidote_fluidtype": "解毒药液体",
+  "fluid.create_cobblemon_potion.antidote_source": "解毒药",
+  "item.create_cobblemon_potion.antidote_bucket": "一桶解毒药"
 }
