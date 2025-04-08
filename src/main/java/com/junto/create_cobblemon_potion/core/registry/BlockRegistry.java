@@ -14,10 +14,10 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class BlockRegistry extends Blocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(create_cobblemon_potion.MODID);
 
-    public static final DeferredBlock<Block> TEST_BLOCK = BLOCKS.register(
-            "test_block",
-            ()-> new TestBlock()
-    );
+//    public static final DeferredBlock<Block> TEST_BLOCK = BLOCKS.register(
+//            "test_block",
+//            ()-> new TestBlock()
+//    );
 
     // 药水流体方块
     public static final DeferredHolder<Block, LiquidBlock> MEDICINAL_BREW_BLOCK = BLOCKS.register(

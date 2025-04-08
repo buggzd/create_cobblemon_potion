@@ -89,8 +89,6 @@ public class create_cobblemon_potion
     {
 //        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
 //            event.accept(EXAMPLE_BLOCK_ITEM);
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(ItemRegistry.TEST_BLOCK_ITEM.get());
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

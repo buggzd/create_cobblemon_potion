@@ -20,7 +20,7 @@ public class CreativeTabRegistry {
                     .icon(() -> ItemRegistry.MEDICINAL_BREW_BUCKET.get().getDefaultInstance()) // *** 修改图标为药水桶 ***
                     .displayItems((itemDisplayParameters, output) -> {
                         // 将模组物品添加到此标签页
-                        output.accept(ItemRegistry.TEST_BLOCK_ITEM.get()); // 保留测试方块物品
+                        // output.accept(ItemRegistry.TEST_BLOCK_ITEM.get()); // 保留测试方块物品
 
                         // --- 在这里添加药水桶 ---
                         // healthy
