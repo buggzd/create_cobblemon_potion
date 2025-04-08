@@ -43,6 +43,10 @@ public class ClientSetup {
         registerFluidTypeExtension(event, FluidTypeRegistry.MAX_ELIXIR_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.ANTIDOTE_FLUID_TYPE.get());
         registerFluidTypeExtension(event, FluidTypeRegistry.AWAKENING_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.BURN_HEAL_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.ICE_HEAL_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.PARALYZE_HEAL_FLUID_TYPE.get());
+        registerFluidTypeExtension(event, FluidTypeRegistry.FULL_HEAL_FLUID_TYPE.get());
 
         // ... other types ...
     }
@@ -133,6 +137,21 @@ public class ClientSetup {
 
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.AWAKENING_SOURCE.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(FluidRegistry.AWAKENING_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.BURN_HEAL_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.BURN_HEAL_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ICE_HEAL_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.ICE_HEAL_FLOWING.get(), RenderType.translucent());
+
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.PARALYZE_HEAL_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.PARALYZE_HEAL_FLOWING.get(), RenderType.translucent());
+
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.FULL_HEAL_SOURCE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(FluidRegistry.FULL_HEAL_FLOWING.get(), RenderType.translucent());
 
             // ... other types ...
         });

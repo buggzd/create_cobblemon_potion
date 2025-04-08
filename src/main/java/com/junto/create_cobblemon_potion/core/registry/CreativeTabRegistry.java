@@ -38,6 +38,10 @@ public class CreativeTabRegistry {
                         // debuff
                         output.accept(ItemRegistry.ANTIDOTE_BUCKET.get());
                         output.accept(ItemRegistry.AWAKENING_BUCKET.get());
+                        output.accept(ItemRegistry.BURN_HEAL_BUCKET.get());
+                        output.accept(ItemRegistry.ICE_HEAL_BUCKET.get());
+                        output.accept(ItemRegistry.PARALYZE_HEAL_BUCKET.get());
+                        output.accept(ItemRegistry.FULL_HEAL_BUCKET.get());
 
 
                     }).build());

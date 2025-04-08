@@ -252,6 +252,79 @@ public class FluidRegistry {
     )
             .bucket(ItemRegistry.AWAKENING_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
             .block(BlockRegistry.AWAKENING_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical burn heal
+    public static final DeferredHolder<Fluid, FlowingFluid> BURN_HEAL_SOURCE = FLUIDS.register(
+            "burn_heal_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.BURN_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> BURN_HEAL_FLOWING = FLUIDS.register(
+            "burn_heal_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.BURN_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties BURN_HEAL_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.BURN_HEAL_FLUID_TYPE, // 关联 FluidType
+            BURN_HEAL_SOURCE,                       // 关联源流体
+            BURN_HEAL_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.BURN_HEAL_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.BURN_HEAL_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+
+    // medical ice heal
+    public static final DeferredHolder<Fluid, FlowingFluid> ICE_HEAL_SOURCE = FLUIDS.register(
+            "ice_heal_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.ICE_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> ICE_HEAL_FLOWING = FLUIDS.register(
+            "ice_heal_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.ICE_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties ICE_HEAL_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.ICE_HEAL_FLUID_TYPE, // 关联 FluidType
+            ICE_HEAL_SOURCE,                       // 关联源流体
+            ICE_HEAL_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.ICE_HEAL_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.ICE_HEAL_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical paralyze heal
+    public static final DeferredHolder<Fluid, FlowingFluid> PARALYZE_HEAL_SOURCE = FLUIDS.register(
+            "paralyze_heal_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.PARALYZE_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> PARALYZE_HEAL_FLOWING = FLUIDS.register(
+            "paralyze_heal_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.PARALYZE_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties PARALYZE_HEAL_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.PARALYZE_HEAL_FLUID_TYPE, // 关联 FluidType
+            PARALYZE_HEAL_SOURCE,                       // 关联源流体
+            PARALYZE_HEAL_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.PARALYZE_HEAL_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.PARALYZE_HEAL_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
+    // medical full heal
+    public static final DeferredHolder<Fluid, FlowingFluid> FULL_HEAL_SOURCE = FLUIDS.register(
+            "full_heal_source", // 注册名 (源)
+            () -> new BaseFlowingFluid.Source(FluidRegistry.FULL_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    public static final DeferredHolder<Fluid, FlowingFluid> FULL_HEAL_FLOWING = FLUIDS.register(
+            "full_heal_flowing", // 注册名 (流动)
+            () -> new BaseFlowingFluid.Flowing(FluidRegistry.FULL_HEAL_FLUID_PROPERTIES) // 引用下面的 Properties
+    );
+
+    private static final BaseFlowingFluid.Properties FULL_HEAL_FLUID_PROPERTIES = new BaseFlowingFluid.Properties(
+            FluidTypeRegistry.FULL_HEAL_FLUID_TYPE, // 关联 FluidType
+            FULL_HEAL_SOURCE,                       // 关联源流体
+            FULL_HEAL_FLOWING                       // 关联流动流体
+    )
+            .bucket(ItemRegistry.FULL_HEAL_BUCKET) // **现在引用 ItemRegistry 中的 DeferredHolder**
+            .block(BlockRegistry.FULL_HEAL_BLOCK); // **现在引用 BlockRegistry 中的 DeferredHolder**
     // 注册到事件总线的方法
     public static void register(IEventBus modEventBus) {
         FLUIDS.register(modEventBus);

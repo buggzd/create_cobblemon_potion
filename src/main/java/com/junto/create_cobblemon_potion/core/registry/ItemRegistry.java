@@ -168,6 +168,54 @@ public class ItemRegistry {
                             .stacksTo(1)
             )
     );
+    // medical burn heal
+    public static final DeferredHolder<Item, BucketItem> BURN_HEAL_BUCKET = ITEMS.register(
+            "burn_heal_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.BURN_HEAL_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical ice heal
+    public static final DeferredHolder<Item, BucketItem> ICE_HEAL_BUCKET = ITEMS.register(
+            "ice_heal_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.ICE_HEAL_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical paralyze heal
+    public static final DeferredHolder<Item, BucketItem> PARALYZE_HEAL_BUCKET = ITEMS.register(
+            "paralyze_heal_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.PARALYZE_HEAL_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
+    // medical full heal
+    public static final DeferredHolder<Item, BucketItem> FULL_HEAL_BUCKET = ITEMS.register(
+            "full_heal_bucket",
+            () -> new BucketItem(
+                    // **直接传递 DeferredHolder<Fluid, FlowingFluid> 给需要 Supplier<Fluid> 的构造函数**
+                    // 因为 DeferredHolder 实现了 Supplier<Fluid> 接口
+                    FluidRegistry.FULL_HEAL_SOURCE.get(),
+                    new Item.Properties()
+                            .craftRemainder(Items.BUCKET)
+                            .stacksTo(1)
+            )
+    );
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

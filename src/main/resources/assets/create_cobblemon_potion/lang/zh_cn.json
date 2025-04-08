@@ -51,5 +51,25 @@
 
   "fluid_type.create_cobblemon_potion.awakening_fluidtype": "解眠药液体",
   "fluid.create_cobblemon_potion.awakening_source": "解眠药",
-  "item.create_cobblemon_potion.awakening_bucket": "一桶解眠药"
+  "item.create_cobblemon_potion.awakening_bucket": "一桶解眠药",
+
+
+  "fluid_type.create_cobblemon_potion.burn_heal_fluidtype": "灼伤药液体",
+  "fluid.create_cobblemon_potion.burn_heal_source": "灼伤药",
+  "item.create_cobblemon_potion.burn_heal_bucket": "一桶灼伤药",
+
+
+  "fluid_type.create_cobblemon_potion.ice_heal_fluidtype": "解冻药液体",
+  "fluid.create_cobblemon_potion.ice_heal_source": "解冻药",
+  "item.create_cobblemon_potion.ice_heal_bucket": "一桶解冻药",
+
+
+  "fluid_type.create_cobblemon_potion.paralyze_heal_fluidtype": "解麻药液体",
+  "fluid.create_cobblemon_potion.paralyze_heal_source": "解麻药",
+  "item.create_cobblemon_potion.paralyze_heal_bucket": "一桶解麻药",
+
+
+  "fluid_type.create_cobblemon_potion.full_heal_fluidtype": "万灵药液体",
+  "fluid.create_cobblemon_potion.full_heal_source": "万灵药",
+  "item.create_cobblemon_potion.full_heal_bucket": "一桶万灵药"
 }

@@ -141,6 +141,46 @@ public class BlockRegistry extends Blocks {
             )
     );
 
+    // medical 灼伤药
+    public static final DeferredHolder<Block, LiquidBlock> BURN_HEAL_BLOCK = BLOCKS.register(
+            "burn_heal_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.BURN_HEAL_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical 解冻药
+    public static final DeferredHolder<Block, LiquidBlock> ICE_HEAL_BLOCK = BLOCKS.register(
+            "ice_heal_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.ICE_HEAL_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical 解麻药
+    public static final DeferredHolder<Block, LiquidBlock> PARALYZE_HEAL_BLOCK = BLOCKS.register(
+            "paralyze_heal_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.PARALYZE_HEAL_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
+    // medical 万灵药
+    public static final DeferredHolder<Block, LiquidBlock> FULL_HEAL_BLOCK = BLOCKS.register(
+            "full_heal_block", // 方块的注册名
+            () -> new LiquidBlock(
+                    FluidRegistry.FULL_HEAL_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+                    // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
+                    // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
+            )
+    );
 
 
     public static void register(IEventBus eventBus){

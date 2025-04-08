@@ -51,5 +51,24 @@
 
   "fluid_type.create_cobblemon_potion.awakening_fluidtype": "awakening Fluid Type",
   "fluid.create_cobblemon_potion.awakening_source": "awakening",
-  "item.create_cobblemon_potion.awakening_bucket": "Bucket of awakening"
+  "item.create_cobblemon_potion.awakening_bucket": "Bucket of awakening",
+
+
+  "fluid_type.create_cobblemon_potion.burn_heal_fluidtype": "burn heal Fluid Type",
+  "fluid.create_cobblemon_potion.burn_heal_source": "burn heal",
+  "item.create_cobblemon_potion.burn_heal_bucket": "Bucket of burn heal",
+
+
+  "fluid_type.create_cobblemon_potion.paralyze_heal_fluidtype": "paralyze heal Fluid Type",
+  "fluid.create_cobblemon_potion.paralyze_heal_source": "paralyze heal",
+  "item.create_cobblemon_potion.paralyze_heal_bucket": "Bucket of paralyze heal",
+
+
+  "fluid_type.create_cobblemon_potion.full_heal_fluidtype": "full heal Fluid Type",
+  "fluid.create_cobblemon_potion.full_heal_source": "full heal",
+  "item.create_cobblemon_potion.full_heal_bucket": "Bucket of full heal",
+
+  "fluid_type.create_cobblemon_potion.ice_heal_fluidtype": "ice heal Fluid Type",
+  "fluid.create_cobblemon_potion.ice_heal_source": "ice heal",
+  "item.create_cobblemon_potion.ice_heal_bucket": "Bucket of ice heal"
 }
