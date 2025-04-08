@@ -91,6 +91,6 @@ If you encounter any bugs or have suggestions, please report them on the [GitHub
 
 ### Dependencies
 *   ...
-*   **Create:** ([Required Version]) - Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-*   **Cobblemon:** ([Required Version]) - Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+*   **Create:**  - Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+*   **Cobblemon:**  - Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 *   ...
