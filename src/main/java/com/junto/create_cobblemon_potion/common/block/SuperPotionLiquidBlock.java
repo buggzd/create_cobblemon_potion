@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 
 public class SuperPotionLiquidBlock extends AbstractEffectLiquidBlock {
 
-    public static final int INITIAL_STRENGTH = 1; // 好伤药假设初始强度 2
+    public static final int INITIAL_STRENGTH = 60; // 好伤药假设初始强度 2
     // 降级后变成普通药水方块 (需要 BlockRegistry 已经注册了 POTION_BLOCK)
     // !! 注意：这里可能产生加载顺序问题，最好使用 Supplier !!
     private static final Supplier<net.minecraft.world.level.block.state.BlockState> DEGRADED_STATE =

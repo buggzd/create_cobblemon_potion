@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public class PotionLiquidBlock extends AbstractEffectLiquidBlock {
 
     // 定义这种药水的初始强度和降级后的状态
-    public static final int INITIAL_STRENGTH = 1; // 普通药水假设只有1级强度
+    public static final int INITIAL_STRENGTH = 120; // 普通药水假设只有1级强度
     // 降级后变回低级药水
     private static final Supplier<net.minecraft.world.level.block.state.BlockState> DEGRADED_STATE =
             () -> BlockRegistry.MEDICINAL_BREW_BLOCK.get().defaultBlockState().setValue(STRENGTH, MedicinalBrewLiquidBlock.INITIAL_STRENGTH); // Degrade to Potion Block at its initial strength
