@@ -90,7 +90,8 @@ If you encounter any bugs or have suggestions, please report them on the [GitHub
 如果你遇到任何 Bug 或有功能建议，请在 [GitHub Issues 页面](https://github.com/buggzd/create_cobblemon_potion/issues) 提交反馈！
 
 ### Dependencies
-*   ...
-*   **Create:** ([Required Version]) - Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-*   **Cobblemon:** ([Required Version]) - Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
-*   ...
+
+*   **Create:**  - Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+*   **Cobblemon:**  - Licensed under [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+  
+![achievement](https://cdn.modrinth.com/data/cached_images/174fcca583817c155b48eaa43a255e10436bf6de.png)
