@@ -1,6 +1,7 @@
 package com.junto.create_cobblemon_potion.core.registry;
 
 import com.create_cobblemon_potion;
+import com.junto.create_cobblemon_potion.common.block.PotionLiquidBlock;
 import com.junto.create_cobblemon_potion.common.block.TestBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -30,10 +31,10 @@ public class BlockRegistry extends Blocks {
             )
     );
     // medical 伤药
-    public static final DeferredHolder<Block, LiquidBlock> POTION_BLOCK = BLOCKS.register(
+    public static final DeferredHolder<Block, PotionLiquidBlock> POTION_BLOCK = BLOCKS.register(
             "potion_block", // 方块的注册名
-            () -> new LiquidBlock(
-                    FluidRegistry.POTION_SOURCE.get(), // **重要：** 引用 FluidRegistry 中的源流体 Supplier
+            () -> new PotionLiquidBlock(
+                    FluidRegistry.POTION_SOURCE, // **重要：** 引用 FluidRegistry 中的源流体 Supplier
                     // 复制水的方块属性 (材质、无碰撞、亮度、破坏时间等)
                     // 如果 ofFullCopy 有问题，可以尝试 Properties.of().noCollission().strength(100f).lightLevel(...) 等手动设置
                     BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable() // 通常流体方块不掉落物品
