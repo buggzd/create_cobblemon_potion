@@ -10,7 +10,7 @@ All added mixing recipes are designed strictly based on `Cobblemon`'s original m
 >
 > Unlike standard `Cobblemon` brewing (where 1 primary ingredient + base potion/water typically yields 3 finished potions, i.e., 750mB), using the Create Mechanical Mixer offers enhanced efficiency:
 >
-> **1 Primary Ingredient + 250mB Base Fluid → 1000mB Corresponding Potion Fluid (Equivalent to 4 potions)**
+> **1 Primary Ingredient + 1000mB Base Fluid → 1000mB Corresponding Potion Fluid (Equivalent to 4 potions)**
 >
 > This change is intended to encourage players to utilize the powerful automation capabilities of Create for building potion production lines.
 
