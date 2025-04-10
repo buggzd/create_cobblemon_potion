@@ -26,6 +26,7 @@ Pokémon potion fluids placed directly into the world without being contained (e
 *   Higher-tier potions degrade **more quickly** (i.e., they require fewer average random ticks to trigger degradation).
 
 **(Visual Demonstration)**
+
 ![Potion Volatilization/Degradation Process](../Pictures/potionVolatilization.gif)
 
 **Average Degradation Time per Potion Type:**
