@@ -1,3 +1,3 @@
 # Create Cobblemon Potions Wiki
 
-### [中文](./Chinese) | [Englisht](./Egnlish)
+### [中文](./中文) | [Englisht](./Egnlish)
