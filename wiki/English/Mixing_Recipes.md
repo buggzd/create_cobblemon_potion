@@ -46,4 +46,7 @@ To brew Cobblemon potion fluids using Create machinery, follow these steps:
     *   Pipe the corresponding potion fluid into the Spout.
     *   The Spout will automatically fill one Glass Bottle with **250mB** of the potion fluid, producing the corresponding `Cobblemon` potion item (e.g., `cobblemon:potion`).
 
+(A Simple Example)
+
+![](../Pictures/SimpleExample.png)
 By following these steps, you can efficiently and automatically produce large quantities of Cobblemon potions using the power of Create!
