@@ -21,7 +21,7 @@ To brew Cobblemon potion fluids using Create machinery, follow these steps:
 1. **Prepare Create Machinery:**
    * Place down a **Basin**.
    * Position a **Mechanical Mixer** above the Basin.
-   * Place a **Blaze Burner** beneath the Basin and provide it with fuel (e.g., Coal, Blaze Powder). The vast majority of Cobblemon potion recipes require the `heated` condition.
+   * Place a **Blaze Burner** beneath the Basin and provide it with fuel (e.g., Coal). The vast majority of Cobblemon potion recipes require the `heated` condition.
 2. **Add Base Fluid:**
    * Determine the required base fluid based on the `Cobblemon` recipe. For the first step of most potions, this is typically **Medicinal Brew (`cobblemon:medicinal_brew`)**, corresponding to Medicinal Brew in cobblemon brewing.
    * Using Fluid Pipes, Tanks, or directly with a bucket, insert **250mB** of the base fluid into the Basin.
@@ -39,7 +39,7 @@ To brew Cobblemon potion fluids using Create machinery, follow these steps:
    * To obtain the actual usable `Cobblemon` potion **items**, you need to bottle the potion fluid.
    * Set up a **Spout** with a belt or depot underneath to supply **Glass Bottles**.
    * Pipe the corresponding potion fluid into the Spout.
-   * The Spout will automatically fill one Glass Bottle with **250mB** of the potion fluid, producing the corresponding `Cobblemon` potion item (e.g., `cobblemon:potion`).
+   * The Spout will automatically fill one Glass Bottle with **1000mB** of the potion fluid, producing the corresponding `Cobblemon` potion item (e.g., `cobblemon:potion`).
 
 (A Simple medicinal brew Example)
 
