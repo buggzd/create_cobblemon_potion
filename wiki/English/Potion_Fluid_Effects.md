@@ -1,4 +1,5 @@
 ### **Potion Fluid Effects**
+> Note: This feature was added after v1.0.1.
 
 When a player or other living entity comes into contact with Pokémon potion fluid blocks added by this mod (including both source blocks and flowing blocks), they will receive corresponding status effects (Buffs) based on the type of potion. Higher-tier potions generally provide stronger effects.
 
