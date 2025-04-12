@@ -13,7 +13,7 @@ icon: house
 [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)](https://github.com/buggzd/create_cobblemon_potion/blob/master/LICENSE) ![CurseForge Downloads](https://img.shields.io/curseforge/dt/1238271)
 
 
-![Logo](./Pictures/logo.png)
+![](./Pictures/logo.png)
 
 ---
 
