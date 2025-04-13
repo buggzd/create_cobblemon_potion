@@ -1,0 +1,16 @@
+ {
+   "type": "minecraft:crafting_shapeless",
+   "category": "misc",
+   "ingredients": [
+          {
+            "item": "cobblemon:medicinal_brew",
+            "count": "4"
+          },
+          { "item": "minecraft:bucket" }
+   ],
+   "result":
+     {
+         "id": "create_cobblemon_potion:medicinal_brew_bucket"
+     }
+
+ }
