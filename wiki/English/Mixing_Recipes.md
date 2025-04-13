@@ -47,3 +47,9 @@ To brew Cobblemon potion fluids using Create machinery, follow these steps:
 
 \
 By following these steps, you can efficiently and automatically produce large quantities of Cobblemon potions using the power of Create!
+
+### All-in-one automated brewing machine Example
+
+{% embed url="https://www.youtube.com/watch?v=yeGknn8qUgg" %}
+Example
+{% endembed %}
