@@ -69,7 +69,7 @@ side = "BOTH"
 [[dependencies.create_cobblemon_potion]]  # 替换your_mod_id为你的MODID
 modId = "cobblemon"
 type = "required"
-versionRange = "[1.6.0,)"
+versionRange = "[1.6.0,1.8.0)"
 ordering = "NONE"
 side = "BOTH"
 
