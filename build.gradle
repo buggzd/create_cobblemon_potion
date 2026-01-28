@@ -145,7 +145,7 @@ dependencies {
     runtimeOnly "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
     implementation "com.tterrag.registrate:Registrate:${registrate_version}"
     // cobblemon dependencies
-    implementation "com.cobblemon:neoforge:1.6.1+1.21.1"
+    implementation "com.cobblemon:neoforge:1.7.2+1.21.1"
     // kotlinForForge
     implementation("thedarkcolour:kotlinforforge-neoforge:5.7.0") {
         exclude group: "net.neoforged.fancymodloader",  module: 'loader'

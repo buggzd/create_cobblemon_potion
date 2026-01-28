@@ -22,7 +22,7 @@ This mod is an addon for **Create** and **Cobblemon**, designed to integrate Cob
 *   **Minecraft:** [1.21.1]
 *   **NeoForge:** [21.1.129]
 *   **Create:** [6.0.4]
-*   **Cobblemon:** [1.6.1]
+*   **Cobblemon:** [1.6.0 - 1.7.x]
 *   **(Optional but Recommended)** JEI/EMI/REI for recipe viewing.
 
 ### Features
@@ -61,7 +61,7 @@ If you encounter any bugs or have suggestions, please report them on the [GitHub
 *   **Minecraft:** [1.21.1]
 *   **NeoForge:** [21.1.129]
 *   **Create:** [6.0.4]
-*   **Cobblemon:** [1.6.1]
+*   **Cobblemon:** [1.6.0 - 1.7.x]
 *   **(可选但推荐)** JEI/EMI/REI 用于查看配方。
 
 ### 特性
